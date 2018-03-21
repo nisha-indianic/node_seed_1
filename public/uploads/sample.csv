@@ -1,0 +1,4 @@
+verificationToken,password,username,mobile,emailId,lastname,firstname,status,deleteStatus,verificationStatus,photo
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pc2hhLnJhdGhvZEBpbmRpYW5pYy5jb20iLCJpYXQiOjE1MjA5MTcwOTQsImV4cCI6MTUyMTAzNzA5NH0.QE0Y1-uiOOtVZ8Ps3PumSbbzFprRV3D7mPua39s1vw4,nisha123,nisha11,1234567890,nisha.rathod@indianic.com,rathore,nishi,pending,disable,active,1520918113077.jpg
+156,bob123,bob12,7894561230,bob@gmail.com,david,bob,active,disbable,pending,
+147,john23,john11,3214567890,john@gmail.com,player,john,active,disbable,pending,

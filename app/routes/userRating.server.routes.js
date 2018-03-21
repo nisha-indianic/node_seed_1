@@ -1,0 +1,20 @@
+var globalMethods = require('./../../configs/globals');
+var config = require('./../../configs/configs');
+
+module.exports = function(app,express){
+    var router = express.Router();
+    var userRating = require('../controllers/userRating.server.controller');
+
+    router.post('/userRatingList', globalMethods.checkAuth, userRating.userRatingListing);
+    router.post('/editUserRating', globalMethods.checkAuth, userRating.editUserRating);
+    router.post('/deleteUserRating', globalMethods.checkAuth, userRating.deleteUserRating);
+    router.post('/deleteUserRatings', globalMethods.checkAuth, userRating.deleteUserRatings);
+    router.post('/approveUserRating', globalMethods.checkAuth, userRating.approveUserRating);
+
+
+    app.use(config.baseApiUrl, router);
+
+    
+
+
+}
