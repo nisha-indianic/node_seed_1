@@ -8,13 +8,13 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.9.4
-      
+      - image: mongo:3.6.3
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo
+    working_directory: ~/node_seed_1
 
     steps:
       - checkout
@@ -26,7 +26,9 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
+      - run: 
+        name:test
+        command: npm install
 
       - save_cache:
           paths:
